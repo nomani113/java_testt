@@ -1,30 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>Taking User Input</h1>
-    <form onsubmit="dosum(); return false">
-        num1: <input id="num1" type="number">
-        <br>
-        num2: <input id="num2" type="number">
-        <br>
-        <button type="submit">sum</button>
-    </form>
-    <h3 id="result"></h3>
-    <script>
-        function dosum(){
-            let firstNumber = Number(document.querySelector("#num1").value)
-           let secondNumber = +document.querySelector("#num2").value
-            console.log(firstNumber,secondNumber);
-            let sum = firstNumber + secondNumber;
-            document.querySelector("#result").innerHTML = sum;
-        }
-        
+    <div class="container">
+        <div class="style">
+            <h1>Taking User Input</h1>
+            <form onsubmit="dosum(); return false">
+                num1: <input id="num1" type="number">
+                <br>
+                num2: <input id="num2" type="number">
+                <br>
+                <button type="submit">sum</button>
+            </form>
+            <h3 id="result"></h3>
+            <script>
+                function dosum() {
+                    let firstNumber = Number(document.querySelector("#num1").value)
+                    let secondNumber = +document.querySelector("#num2").value
+                    console.log(firstNumber, secondNumber);
+                    let sum = firstNumber + secondNumber;
+                    document.querySelector("#result").innerHTML = sum;
+                }
+            </script>
+
+
+            <h1>Taking User Input</h1>
+            <form onsubmit="dosubtract(); return false">
+                num1: <input id="num3" type="number">
+                <br>
+                num2: <input id="num4" type="number">
+                <br>
+                <button type="submit">sum</button>
+            </form>
+            <h3 id="minus"></h3>
+            <script>
+                function dosubtract() {
+                    let firstNumber = Number(document.querySelector("#num3").value)
+                    let secondNumber = document.querySelector("#num4").value
+                    console.log(firstNumber, secondNumber);
+                    let minus = firstNumber - secondNumber;
+                    document.querySelector("#minus").innerHTML = minus;
+                }
+            </script>
+
+            <h1>Taking User Input</h1>
+            <form onsubmit="domultiply(); return false">
+                num1: <input id="num5" type="number">
+                <br>
+                num2: <input id="num6" type="number">
+                <br>
+                <button type="submit">sum</button>
+            </form>
+            <h3 id="multiply"></h3>
+            <script>
+                function domultiply() {
+                    let firstNumber = Number(document.querySelector("#num5").value)
+                    let secondNumber = document.querySelector("#num6").value
+                    console.log(firstNumber, secondNumber);
+                    let multiply = firstNumber * secondNumber;
+                    document.querySelector("#multiply").innerHTML = multiply;
+                }
+            </script>
+
+
+            <h1>Taking User Input</h1>
+            <form onsubmit="dodivide(); return false">
+                num1: <input id="num7" type="number">
+                <br>
+                num2: <input id="num8" type="number">
+                <br>
+                <button type="submit">sum</button>
+            </form>
+            <h3 id="divide"></h3>
+            <script>
+                function dodivide() {
+                    let firstNumber = Number(document.querySelector("#num7").value)
+                    let secondNumber = document.querySelector("#num8").value
+                    console.log(firstNumber, secondNumber);
+                    let divide = firstNumber / secondNumber;
+                    document.querySelector("#divide").innerHTML = divide;
+                }
+            </script>
+        </div>
+        <script>
+
+
 //    let num1 = 3 + 24 - 3;
 //    console.log (num1);
 
@@ -44,6 +111,8 @@
 // 
 
 
+        </script>
+    </div>
 
 
 
@@ -72,6 +141,6 @@
 
 
 
-    </script>
 </body>
+
 </html>
